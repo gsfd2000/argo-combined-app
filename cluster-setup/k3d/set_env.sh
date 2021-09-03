@@ -26,13 +26,15 @@ export REGISTRY_SERVER=https://index.docker.io/v1/
 export REGISTRY_USER=gsfd2000
 
 # Replace `[...]` with the registry password
-export REGISTRY_PASS='Federica&27'
+#export REGISTRY_PASS='..'
+# set on cli, not to be stored in GIT
 
 # Replace `[...]` with the registry email
 export REGISTRY_EMAIL=gsfd2000@gmail.com
 
 # Replace `[...]` with the GitHub token
-export GH_TOKEN=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
+# set on cli, not to be stored in GIT
+#export GH_TOKEN=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
 
 # Replace `[...]` with the GitHub email
 export GH_EMAIL=gsfd2000@gmail.com
