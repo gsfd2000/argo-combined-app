@@ -38,3 +38,6 @@ export REGISTRY_EMAIL=gsfd2000@gmail.com
 
 # Replace `[...]` with the GitHub email
 export GH_EMAIL=gsfd2000@gmail.com
+
+# setting kubeconfig variable for user vagrant 
+export KUBECONFIG=/home/vagrant/.k3d/kubeconfig-nginx-cluster.yaml

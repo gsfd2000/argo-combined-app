@@ -28,3 +28,10 @@ kubectl version
 bash install.sh
 # export KUBECONFIG=$PWD/kubeconfig.yaml
 k3d version
+
+# generate kubeconfig file and set env variable
+su - vagrant -c 'k3d kubeconfig write nginx-cluster'
+
+# this generates the kubeconfig file in the user directory
+# export KUBECONFIG=/home/vagrant/.k3d/kubeconfig-nginx-cluster.yaml
+# variable will be set in set_env script as it runs under source.
