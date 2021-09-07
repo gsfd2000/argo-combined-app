@@ -18,7 +18,7 @@
 export GH_ORG=gsfd2000
 
 # Replace `[...]` with the base host accessible through NGINX Ingress
-export BASE_HOST=argo.192.168.62.2.nip.io
+export BASE_HOST=argo.172.18.0.2.nip.io
 
 export REGISTRY_SERVER=https://index.docker.io/v1/
 
