@@ -129,7 +129,7 @@ kubectl --namespace workflows \
     --docker-email=$REGISTRY_EMAIL \
     --output json \
     --dry-run=client \
-    | kubeseal --format yaml \
+    | kubeseal --controller-name=sealed-secrets --format yaml \
     | tee argo-workflows/overlays/production/regcred.yaml
 
 # Wait for a while and repeat the previous command if the output contains `cannot fetch certificate` error message
