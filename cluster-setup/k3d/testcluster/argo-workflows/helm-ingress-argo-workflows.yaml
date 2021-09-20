@@ -11,3 +11,4 @@ spec:
   set:
     controller.workflowNamespaces[0]: "default"
     controller.workflowNamespaces[1]: "workflows" 
+    controller.containerRuntimeExecutor: "k8sapi"

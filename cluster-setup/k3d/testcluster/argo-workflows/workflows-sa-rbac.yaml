@@ -50,6 +50,17 @@ rules:
   verbs:
   - create
   - get
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - list
+  - watch
+  - create
+  - patch
+  - delete
+  - get
 
 ---
 
@@ -85,3 +96,4 @@ rules:
   - eventsources
   verbs:
   - list
+  - watch
