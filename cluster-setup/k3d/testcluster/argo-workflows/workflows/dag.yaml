@@ -1,7 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: dag-
+  name: dagworkflow
+  namespace: workflows
   labels:
     workflows.argoproj.io/archive-strategy: "false"
 spec:
@@ -73,6 +74,7 @@ spec:
       - name: message
     container:
       image: alpine
+      imagePullPolicy: IfNotPresent
       command: [echo]
       args:
       - "{{inputs.parameters.message}}"
