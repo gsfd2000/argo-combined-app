@@ -1,1 +1,3 @@
 /creds
+/cluster-setup/k3d/testcluster/argo-workflows/regcred.yaml
+/cluster-setup/k3d/testcluster/argo-workflows/ingress.yaml
