@@ -4,3 +4,4 @@
 =======
 /cluster-setup/k3d/testcluster/argo-workflows/ingress.yaml
 >>>>>>> 5ef87db74844a52c48d93fdc85fec02fdd605070
+/cluster-setup/k3d/kubeconfig.yaml

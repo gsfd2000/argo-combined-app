@@ -1,0 +1,61 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: workflow-events
+  namespace: argo-events
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: workflowevents
+subjects:
+- kind: ServiceAccount
+  name: workflow
+  namespace: workflows
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: worflowevents
+  namespace: argo-events
+rules:
+- apiGroups:
+  - argoproj.io
+  resources:
+  - workfloweventbindings
+  - sensors
+  - eventsources
+  - eventbus
+  verbs:
+  - list
+  - watch
+  - get
+  - patch
+  - update
+  - create
+  - delete
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - pods/log
+  - pods/exec
+  verbs:
+  - list
+  - get
+  - watch
+  - update
+- apiGroups:
+  - ""
+  - events.k8s.io
+  resources:
+  - events
+  verbs:
+  - list
+  - get
+  - watch
+  - patch
+  - update
+  - create
+  - delete

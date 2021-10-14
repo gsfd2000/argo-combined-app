@@ -6,5 +6,5 @@ metadata:
 spec:
   repo: https://kubernetes.github.io/ingress-nginx
   chart: ingress-nginx
-  version: 3.7.1
+  version: 4.0.6
   targetNamespace: kube-system
