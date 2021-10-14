@@ -9,4 +9,4 @@ spec:
   version: 4.0.6
   targetNamespace: kube-system
   set:
-    controller.ingressClass=nginx-internal
+    controller.ingressClass=nginx
